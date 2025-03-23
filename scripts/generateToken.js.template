@@ -1,0 +1,5 @@
+// Token Generation Script
+const GOOGLE_CLIENT_ID = 'YOUR_CLIENT_ID';
+const GOOGLE_CLIENT_SECRET = 'YOUR_CLIENT_SECRET';
+
+// Add your token generation logic here 

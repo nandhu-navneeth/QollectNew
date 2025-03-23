@@ -1,0 +1,3 @@
+// Google Drive API Configuration
+export const GOOGLE_CLIENT_ID = 'YOUR_CLIENT_ID';
+export const GOOGLE_CLIENT_SECRET = 'YOUR_CLIENT_SECRET'; 
