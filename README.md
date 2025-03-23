@@ -1,50 +1,184 @@
-# Welcome to your Expo app 👋
+# Qollect - Educational Material Management Platform
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Qollect is a modern mobile application designed to help students organize, share, and access educational materials efficiently. Built with React Native and Expo, it provides a seamless experience for managing study materials across different semesters and subjects.
 
-## Get started
+## 🌟 Features
 
-1. Install dependencies
+### For Students
 
-   ```bash
-   npm install
-   ```
+- 📚 Organize materials by semester and subject
+- 🔍 Advanced search functionality
+- ⭐ Rate and review study materials
+- 📱 Wishlist for saving materials
+- 🔄 Request new materials
+- 🌓 Dark/Light theme support
+- 📱 Cross-platform (iOS & Android)
 
-2. Start the app
+### For Administrators
 
-   ```bash
-    npx expo start
-   ```
+- ✅ Material approval system
+- 👥 User management
+- 📊 Content moderation
+- 🔒 Secure admin access
 
-In the output, you'll find options to open the app in a
+## 🛠️ Technology Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Frontend**: React Native with Expo
+- **Backend**: Firebase
+  - Firestore for database
+  - Firebase Storage for file storage
+  - Firebase Authentication for user management
+- **File Storage**: Google Drive API integration
+- **Navigation**: Expo Router with tab-based navigation
+- **UI Components**: Custom components with modern design
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📱 Screenshots
 
-## Get a fresh project
+[Add your app screenshots here]
 
-When you're ready, run:
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+- Expo CLI
+- Firebase account
+- Google Cloud Console account (for Drive API)
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
-npm run reset-project
+git clone https://github.com/nandhu-navneeth/QollectNew.git
+cd QollectNew
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies:
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Set up environment variables:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+   - Copy `config/googleDriveConfig.js.template` to `config/googleDriveConfig.js`
+   - Add your Google OAuth credentials
+   - Configure Firebase credentials
 
-## Join the community
+4. Start the development server:
 
-Join our community of developers creating universal apps.
+```bash
+npm start
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+5. Run on your device:
+   - iOS: `npm run ios`
+   - Android: `npm run android`
+   - Web: `npm run web`
+
+## 📁 Project Structure
+
+```
+app/
+├── (tabs)/           # Main tab navigation screens
+├── admin/           # Admin panel components
+├── auth/            # Authentication screens
+├── components/      # Reusable UI components
+├── semester/        # Semester-related screens
+└── _layout.jsx      # Root layout configuration
+```
+
+## 🔧 Configuration
+
+### Firebase Setup
+
+1. Create a new Firebase project
+2. Enable Authentication, Firestore, and Storage
+3. Add your Firebase configuration to the project
+
+### Google Drive API Setup
+
+1. Create a project in Google Cloud Console
+2. Enable the Google Drive API
+3. Create OAuth 2.0 credentials
+4. Add the credentials to `config/googleDriveConfig.js`
+
+## 🔒 Security
+
+- Firebase security rules implemented
+- Protected routes and admin access
+- Secure file storage with Google Drive integration
+- Environment variables for sensitive data
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👥 Authors
+
+- Navneeth Nandhu - Initial work
+
+## 🙏 Acknowledgments
+
+- Firebase team for the amazing backend services
+- Expo team for the React Native framework
+- All contributors who have helped shape this project
+
+## 📞 Support
+
+For support, email [your-email@example.com] or create an issue in the repository.
+
+## 🔄 Updates
+
+### Version 1.0.0
+
+- Initial release
+- Basic material management features
+- User authentication
+- Admin panel
+
+## 📱 Platform Support
+
+- iOS 13.0 and above
+- Android 6.0 (API level 23) and above
+- Web browsers (Chrome, Firefox, Safari)
+
+## 🔍 Search Engine Optimization
+
+The app is optimized for:
+
+- Fast loading times
+- Efficient material search
+- Smooth navigation
+- Responsive design
+
+## 🎨 Design System
+
+The app uses:
+
+- Custom Outfit font family
+- Consistent color scheme
+- Modern UI components
+- Responsive layouts
+
+## 🔄 Future Roadmap
+
+- [ ] Offline support
+- [ ] Material recommendations
+- [ ] Collaborative study groups
+- [ ] Advanced analytics
+- [ ] Push notifications
+
+---
+
+Made with ❤️ by Navneeth Nandhu
